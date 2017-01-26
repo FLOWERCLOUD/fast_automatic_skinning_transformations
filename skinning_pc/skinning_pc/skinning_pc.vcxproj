@@ -108,9 +108,10 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <MinimalRebuild>false</MinimalRebuild>
+      <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <AdditionalOptions>/D "IGL_HEADER_ONLY" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\mprojects\eigen_3_3_2;D:\mprojects\libigl-master\include;D:\mprojects\libigl-master\include\igl;D:\mprojects\lib\AntTweakBar\include;D:\mprojects\lib\glew-2.0.0\include;D:\mprojects\lib\freeglut3_0_0builted\include;D:\Program Files\MATLAB\R2015b\extern\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,7 +119,8 @@
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
-      <AdditionalDependencies>freeglut.lib;glew32d.lib;AntTweakBar64.lib;libeng.lib;libmx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>freeglut_staticd.lib;glew32s.lib;AntTweakBar64.lib;igl.lib;libeng.lib;libmx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\mprojects\lib\freeglut3_0_0builted\x64\lib\Debug;D:\mprojects\lib\glew-2.0.0\lib\Release\x64;D:\mprojects\lib\AntTweakBar\lib\debug;D:\mprojects\libigl-master\shared\build\Debug;D:\Program Files\MATLAB\R2015b\extern\lib\win64\microsoft;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
