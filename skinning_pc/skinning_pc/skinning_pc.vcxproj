@@ -74,8 +74,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>c:\prg\lib\eigen-eigen-3.0.3\;c:\depot\igl_repository\igl_lib\include;c:\prg\lib\AntTweakBar\include;$(IncludePath);c:\prg\lib\glew-1.7.0\include\;c:\prg\lib\freeglut-2.6.0\include;c:\prg\lib\eigen-eigen-3.0.3\unsupported;c:\Program Files\MATLAB\R2011a\extern\include</IncludePath>
-    <LibraryPath>..\libx64\Debug;$(LibraryPath);c:\Program Files\MATLAB\R2011a\extern\lib\win64\microsoft\</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -83,8 +83,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>c:\prg\lib\eigen-eigen-3.0.3\;c:\depot\igl_repository\igl_lib\include;c:\prg\lib\AntTweakBar\include;$(IncludePath);c:\prg\lib\glew-1.7.0\include\;c:\prg\lib\freeglut-2.6.0\include;c:\prg\lib\eigen-eigen-3.0.3\unsupported;c:\Program Files\MATLAB\R2011a\extern\include</IncludePath>
-    <LibraryPath>..\libx64\Release;$(LibraryPath);c:\Program Files\MATLAB\R2011a\extern\lib\win64\microsoft\</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
