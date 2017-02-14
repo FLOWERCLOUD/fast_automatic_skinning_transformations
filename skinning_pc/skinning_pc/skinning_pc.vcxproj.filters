@@ -27,9 +27,6 @@
     <ClInclude Include="..\..\skinning\draw_point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\skinning\draw_vbo_mesh.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\skinning\eigen_glUniformMatrixXfv.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -58,9 +55,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\skinning\inside_point.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\skinning\intersection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\skinning\lbs_matrix.h">
@@ -111,9 +105,6 @@
     <ClInclude Include="..\..\skinning\Vec.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\skinning\view_axis.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\skinning\Widget.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -138,12 +129,6 @@
     <ClInclude Include="..\..\skinning\covariance_scatter_matrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\skinning\malloc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\skinning\WunderSVD3x3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\skinning\Singular_Value_Decomposition_Kernel_Declarations.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -153,34 +138,16 @@
     <ClInclude Include="..\..\skinning\Singular_Value_Decomposition_Preamble.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\skinning\wunder_polar_svd.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\skinning\Singular_Value_Decomposition_Givens_QR_Factorization_Kernel.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\skinning\Singular_Value_Decomposition_Jacobi_Conjugation_Kernel.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\skinning\WunderSVD3x3_SSE.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\skinning\MKLEigenInterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\skinning\WunderSVD3x3_AVX.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\..\igl_lib\min_quad_dense.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\skinning\BoneBoneCopyMap.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="discrete_iso_extra.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\skinning\discrete_iso_extra.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\skinning\MT19937.H">
@@ -190,9 +157,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\skinning\CTGALoader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\skinning\uniform_sample.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\skinning\optimize_index_buffer.h">

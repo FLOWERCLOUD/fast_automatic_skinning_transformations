@@ -167,7 +167,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\igl_lib\min_quad_dense.h" />
     <ClInclude Include="..\..\skinning\arap_dof.h" />
     <ClInclude Include="..\..\skinning\arap_rhs.h" />
     <ClInclude Include="..\..\skinning\BasicOpenGLView.h" />
@@ -177,11 +176,9 @@
     <ClInclude Include="..\..\skinning\covariance_scatter_matrix.h" />
     <ClInclude Include="..\..\skinning\CTGALoader.h" />
     <ClInclude Include="..\..\skinning\DegreeOfFreedomType.h" />
-    <ClInclude Include="..\..\skinning\discrete_iso_extra.h" />
     <ClInclude Include="..\..\skinning\draw_directed_line_segment.h" />
     <ClInclude Include="..\..\skinning\draw_mesh.h" />
     <ClInclude Include="..\..\skinning\draw_point.h" />
-    <ClInclude Include="..\..\skinning\draw_vbo_mesh.h" />
     <ClInclude Include="..\..\skinning\eigen_glUniformMatrixXfv.h" />
     <ClInclude Include="..\..\skinning\fit_rotations.h" />
     <ClInclude Include="..\..\skinning\gather_bones.h" />
@@ -192,11 +189,9 @@
     <ClInclude Include="..\..\skinning\gather_transformations.h" />
     <ClInclude Include="..\..\skinning\group_sum_matrix.h" />
     <ClInclude Include="..\..\skinning\inside_point.h" />
-    <ClInclude Include="..\..\skinning\intersection.h" />
     <ClInclude Include="..\..\skinning\is_symmetric.h" />
     <ClInclude Include="..\..\skinning\lbs_matrix.h" />
     <ClInclude Include="..\..\skinning\main.h" />
-    <ClInclude Include="..\..\skinning\malloc.h" />
     <ClInclude Include="..\..\skinning\max_weight_index.h" />
     <ClInclude Include="..\..\skinning\MKLEigenInterface.h" />
     <ClInclude Include="..\..\skinning\MT19937.H" />
@@ -219,17 +214,10 @@
     <ClInclude Include="..\..\skinning\Tform.h" />
     <ClInclude Include="..\..\skinning\tga.h" />
     <ClInclude Include="..\..\skinning\uncolumnize.h" />
-    <ClInclude Include="..\..\skinning\uniform_sample.h" />
     <ClInclude Include="..\..\skinning\unproject.h" />
     <ClInclude Include="..\..\skinning\Vec.h" />
-    <ClInclude Include="..\..\skinning\view_axis.h" />
     <ClInclude Include="..\..\skinning\Widget.h" />
     <ClInclude Include="..\..\skinning\write_BF.h" />
-    <ClInclude Include="..\..\skinning\WunderSVD3x3.h" />
-    <ClInclude Include="..\..\skinning\WunderSVD3x3_AVX.h" />
-    <ClInclude Include="..\..\skinning\WunderSVD3x3_SSE.h" />
-    <ClInclude Include="..\..\skinning\wunder_polar_svd.h" />
-    <ClInclude Include="discrete_iso_extra.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\skinning\Bone.cpp" />
