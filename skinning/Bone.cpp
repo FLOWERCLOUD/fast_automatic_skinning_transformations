@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <cstdio>
 #include <iostream>
+#include "GL/glew.h"
 #include <igl/verbose.h>
 #include <igl/PI.h>
 #include <igl/opengl2/project.h>
@@ -12,7 +13,7 @@
 
 #include "Bone.h"
 #include "Skeleton.h"
-#include "Skeleton.cpp"
+//#include "Skeleton.cpp"
 #include "draw_directed_line_segment.h"
 #include "inside_point.h"
 #include "inside_line_segment.h"

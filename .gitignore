@@ -50,3 +50,13 @@ Temporary Items
 *.sdf
 *.opensdf
 *.suo
+*.tlog
+*.pdb
+*.obj
+*.dll
+*.exe
+*.idb
+*.ilk
+*.ipdb
+*.iobj
+tmp

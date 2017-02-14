@@ -1,3 +1,4 @@
+#include "GL/glew.h"
 #include "main.h"
 #include "Skinning.h"
 #include <cstdio>
@@ -37,7 +38,14 @@ PuppetReader * pr;
 #  include <GL/glext.h>
 #  include <GL/glut.h>
 #endif
+#ifdef _WIN32
+#include <direct.h>
+#define getcwd _getcwd // stupid MSFT "deprecation" warning
+#define chdir _chdir // stupid MSFT "deprecation" warning
 
+#elif
+#include <unistd.h>
+#endif
 #include "CTGALoader.h"
 
 #ifdef _WIN32

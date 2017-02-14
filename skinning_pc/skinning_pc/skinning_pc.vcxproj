@@ -82,7 +82,7 @@
     <IncludePath>C:\Users\ajx\Documents\include\eigen3\unsupported;C:\Users\ajx\Documents\include\eigen3;C:\Users\ajx\Documents\igl_lib;C:\Users\ajx\Documents\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LinkIncremental>false</LinkIncremental>
+    <LinkIncremental>true</LinkIncremental>
     <IncludePath>c:\prg\lib\eigen-eigen-3.0.3\;c:\depot\igl_repository\igl_lib\include;c:\prg\lib\AntTweakBar\include;$(IncludePath);c:\prg\lib\glew-1.7.0\include\;c:\prg\lib\freeglut-2.6.0\include;c:\prg\lib\eigen-eigen-3.0.3\unsupported;c:\Program Files\MATLAB\R2011a\extern\include</IncludePath>
     <LibraryPath>..\libx64\Release;$(LibraryPath);c:\Program Files\MATLAB\R2011a\extern\lib\win64\microsoft\</LibraryPath>
   </PropertyGroup>
@@ -105,13 +105,14 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;IGL_STATIC_LIBRARY;NO_PUPPET;NO_MOSEK;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <AdditionalOptions>/D "IGL_HEADER_ONLY" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>D:\mprojects\eigen_3_3_2;D:\mprojects\libigl-master\include;D:\mprojects\libigl-master\include\igl;D:\mprojects\lib\AntTweakBar\include;D:\mprojects\lib\glew-2.0.0\include;D:\mprojects\lib\freeglut3_0_0builted\include;D:\Program Files\MATLAB\R2015b\extern\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/D "IGL_HEADER_ONLY"  /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\mprojects\eigen_3_3_2;D:\mprojects\libigl-master\include;D:\mprojects\libigl-master\include\igl;D:\mprojects\lib\AntTweakBar\include;D:\mprojects\lib\glew-2.0.0\include;D:\mprojects\lib\freeglut3_0_0builted\include;D:\Program Files\MATLAB\R2015b\extern\include;D:\mprojects\lib\tetgen-master;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>IGL_STATIC_LIBRARY</UndefinePreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -119,8 +120,8 @@
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
-      <AdditionalDependencies>freeglut_staticd.lib;glew32s.lib;AntTweakBar64.lib;igl.lib;libeng.lib;libmx.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:\mprojects\lib\freeglut3_0_0builted\x64\lib\Debug;D:\mprojects\lib\glew-2.0.0\lib\Release\x64;D:\mprojects\lib\AntTweakBar\lib\debug;D:\mprojects\libigl-master\shared\build\Debug;D:\Program Files\MATLAB\R2015b\extern\lib\win64\microsoft;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut_staticd.lib;glew32d.lib;AntTweakBar64.lib;igl.lib;libeng.lib;libmx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\mprojects\lib\freeglut3_0_0builted\x64\lib\Debug;D:\mprojects\lib\glew-2.0.0\lib\Debug\x64;D:\mprojects\lib\AntTweakBar\lib\debug;D:\mprojects\libigl-master\shared\build\Debug;D:\Program Files\MATLAB\R2015b\extern\lib\win64\microsoft;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -148,9 +149,11 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>_RELEASE;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_RELEASE;WIN32;NDEBUG;_CONSOLE;NO_PUPPET;NO_MOSEK;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>D:\mprojects\eigen_3_3_2;D:\mprojects\libigl-master\include;D:\mprojects\libigl-master\include\igl;D:\mprojects\lib\AntTweakBar\include;D:\mprojects\lib\glew-2.0.0\include;D:\mprojects\lib\freeglut3_0_0builted\include;D:\Program Files\MATLAB\R2015b\extern\include;D:\mprojects\lib\tetgen-master;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -158,7 +161,8 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalDependencies>freeglut.lib;glew32.lib;AntTweakBar64.lib;libeng.lib;libmx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>freeglut_static.lib;glew32.lib;AntTweakBar64.lib;libeng.lib;libmx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\mprojects\lib\freeglut3_0_0builted\x64\lib\Release;D:\mprojects\lib\glew-2.0.0\lib\Release\x64;D:\mprojects\lib\AntTweakBar\lib\Release;D:\mprojects\libigl-master\shared\build\Release;D:\Program Files\MATLAB\R2015b\extern\lib\win64\microsoft;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -225,28 +229,15 @@
     <ClInclude Include="discrete_iso_extra.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\skinning\arap_dof.cpp" />
-    <ClCompile Include="..\..\skinning\arap_linear_block.cpp" />
     <ClCompile Include="..\..\skinning\Bone.cpp" />
     <ClCompile Include="..\..\skinning\BoneBoneCopyMap.cpp" />
-    <ClCompile Include="..\..\skinning\draw_floor.cpp" />
+    <ClCompile Include="..\..\skinning\Camera.cpp" />
+    <ClCompile Include="..\..\skinning\gather_positional_constraints_system.cpp" />
     <ClCompile Include="..\..\skinning\main.cpp" />
-    <ClCompile Include="..\..\skinning\malloc.c" />
     <ClCompile Include="..\..\skinning\MT19937F.cpp" />
-    <ClCompile Include="..\..\skinning\newdel.cpp" />
     <ClCompile Include="..\..\skinning\optimize_index_buffer.cpp" />
     <ClCompile Include="..\..\skinning\Skinning.cpp" />
     <ClCompile Include="..\..\skinning\SkinningCallback.cpp" />
-    <ClCompile Include="..\..\skinning\uniform_sample.cpp" />
-    <ClCompile Include="..\..\skinning\WunderSVD3x3.cpp">
-      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">StackFrameRuntimeCheck</BasicRuntimeChecks>
-    </ClCompile>
-    <ClCompile Include="..\..\skinning\WunderSVD3x3_AVX.cpp">
-      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">StackFrameRuntimeCheck</BasicRuntimeChecks>
-    </ClCompile>
-    <ClCompile Include="..\..\skinning\WunderSVD3x3_SSE.cpp">
-      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">StackFrameRuntimeCheck</BasicRuntimeChecks>
-    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
