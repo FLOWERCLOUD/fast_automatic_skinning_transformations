@@ -198,6 +198,12 @@
     <ClInclude Include="..\..\skinning\optimize_index_buffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\skinning\is_symmetric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\skinning\unproject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\skinning\main.cpp">

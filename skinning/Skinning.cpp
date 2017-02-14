@@ -244,15 +244,15 @@ using namespace Eigen;
 #      define SHADER_DIR "./GLSL"
 #    endif
 #  else
-#    define TEMP_DIR  "D:/mprojects/FAST-master/fast/skinning_pc/skinning_pc/AutoDOF/tmp"//"c:/depot/igl_repository/AutoDOF/tmp"
-#    define SHADER_DIR  "D:/mprojects/FAST-master/fast/skinning_pc/skinning_pc/GLSL"//"c:/depot/igl_repository/AutoDOF/Code/skinning/skinning/GLSL"
+#    define TEMP_DIR  "./AutoDOF/tmp"//"c:/depot/igl_repository/AutoDOF/tmp"
+#    define SHADER_DIR  "./GLSL"//"c:/depot/igl_repository/AutoDOF/Code/skinning/skinning/GLSL"
 #  endif
 #endif
 
 #ifndef WIN32
 #  define TEMP_DIR "/var/tmp/.skinning_temp"
 #else
-#  define TEMP_DIR "D:/mprojects/FAST-master/fast/skinning_pc/skinning_pc/AutoDOF/tmp"//"c:/depot/igl_repository/AutoDOF/tmp"
+#  define TEMP_DIR "./AutoDOF/tmp"//"c:/depot/igl_repository/AutoDOF/tmp"
 #endif
 
 #ifdef PBS_KAAN

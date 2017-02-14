@@ -60,3 +60,10 @@ Temporary Items
 *.ipdb
 *.iobj
 tmp
+*.db
+*.bf
+*.dmat
+*.mesh
+*.rbr
+*.mesh
+*.opendb
